@@ -26,12 +26,24 @@ public class Tank {
 	boolean good;
 	private boolean tankAlive = true;
 	// 将Direction转化为数组
+	/**
+	 * 将Direction转化为数组
+	 */
 	Direction[] directions = Direction.values();
 	// 敌方坦克沿着一个方向移动的次数的随机数
+	/**
+	 * 敌方坦克沿着一个方向移动的次数的随机数，网络版则不需要了
+	 */
 	private int enemyStep;
 	// 敌方坦克的随机移动的随机数产生器
+	/**
+	 * 敌方坦克的随机移动的随机数产生器，网络版则不需要了
+	 */
 	private static Random random = new Random();
 	// 炮筒伸出坦克的长度
+	/**
+	 * 炮筒伸出坦克的长度
+	 */
 	public static final int BARREL_LONG = 6;
 	// 保存坦克的x，y坐标值
 	/**
@@ -40,6 +52,9 @@ public class Tank {
 	int x, y;
 		
 	// 声明变量：判断方向键是否被按下
+	/**
+	 * 声明变量：判断方向键是否被按下
+	 */
 	private boolean leftPressed = false,
 					rightPressed = false,
 					upPressed = false,
